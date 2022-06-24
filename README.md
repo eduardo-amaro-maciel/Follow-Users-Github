@@ -2,10 +2,10 @@
 ---
 ## Dar follow em um lista de usuários a partir de um perfil
 
-1 - Entre em um perfil que não seja o seu proprio
-2 - Vá em fllowers
-3 - Após a tela carregar aperte F12 do seu teclado
-4 - Vá em console e cole o código lá é de enter
+- 1 - Entre em um perfil que não seja o seu proprio
+- 2 - Vá em fllowers
+- 3 - Após a tela carregar aperte F12 do seu teclado
+- 4 - Vá em console e cole o código lá é de enter
 
 ## Pronto :)
 
