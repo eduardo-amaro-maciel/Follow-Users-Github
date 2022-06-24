@@ -13,3 +13,6 @@
 
 ---
 ### Você consegue seguir em média 50 pessoas por página com esse método
+
+
+![screen-capture-_1_ (1)](https://user-images.githubusercontent.com/73178068/175653723-55c561a4-0284-4cf7-8a9c-96db1be3ccff.gif)
