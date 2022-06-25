@@ -1,9 +1,9 @@
-function expectPromise() {
+const expectPromise = () => {
     return new Promise((resolve, reject) => {
-        let token = document.querySelectorAll('div[class="d-table-cell col-2 v-align-top text-right"] span form input[type="hidden"]')
+        const token = document.querySelectorAll('div[class="d-table-cell col-2 v-align-top text-right"] span form input[type="hidden"]')
 
         Array.from(token).forEach(e => {
-            let button = document.querySelector(`input[value="${e.value}"] ~ input[type="submit"]`)
+            const button = document.querySelector(`input[value="${e.value}"] ~ input[type="submit"]`)
             if(button.value == 'Follow') {
                 button.click()
             }
