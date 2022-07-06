@@ -2,6 +2,8 @@
 ---
 ## Dar follow em um lista de usuários a partir de um perfil
 
+### OBS: 'follow_users_v2' para funcionar corretamente, é recomendado usar o DevTools (F12) separado da tela princpal (Undock into separate window).
+
 - 1 - Entre em um perfil que não seja o seu proprio
 - 2 - Vá em followers
 - 3 - Após a tela carregar aperte F12 do seu teclado
