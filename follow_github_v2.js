@@ -12,7 +12,8 @@ const followUsers = () => {
                     button.click()
                 }
             } catch(err) {
-                console.log(`Deu pau 😔`)
+                console.error(`Deu pau 😔`)
+                clearInterval(initSetTimer);
                 reject(false)
             }       
         })
@@ -20,15 +21,20 @@ const followUsers = () => {
     })
 }
 
+const finalList = () => {
+    console.warn('Sucesso! A lista Acabou 🚀')
+    clearInterval(initSetTimer);
+}
+
 const buttonNext = document.querySelector('.paginate-container .pagination').children[1]
 
-setInterval(() => {
-    followUsers().then(funcitonResolve => {
-        if (funcitonResolve) {
-            buttonNext.classList.value === '' ? buttonNext.click() : console.log('A lista Acabou')
-        } else {
-            console.log('ocorreu um erro')
-        }
-    })
-}, 4300)
-
+const initSetTimer = setInterval(() => {
+        followUsers().then(funcitonResolve => {
+            if (funcitonResolve) {
+                buttonNext.classList.value === '' ? buttonNext.click() : finalList()
+            } else {
+                console.error('ocorreu um erro 😔')
+                clearInterval(initSetTimer);
+            }
+        })
+    }, 4300)
