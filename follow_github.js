@@ -13,7 +13,7 @@ const expectPromise = () => {
 }
 
 expectPromise().then(e => {
-    if(e) {
+    if (e) {
         document.querySelector('.paginate-container .pagination ').children[1].click()
     }
 })
